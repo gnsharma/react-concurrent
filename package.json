@@ -1,0 +1,33 @@
+{
+  "name": "react-concurrent",
+  "version": "1.0.0",
+  "description": "My own todo app",
+  "main": "src/index.js",
+  "repository": "https://github.com/gnsharma/personalTodo.git",
+  "author": "Govind N Sharma <gnsharma0810@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "yarn install && webpack-cli --config webpack.config.js --mode production --progress --colors --release",
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors --watch",
+    "analyze": "webpack-cli --config webpack.config.js --progress --colors --release --analyze"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-bundle-tracker": "^0.4.3",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.11"
+  },
+  "dependencies": {
+    "react": "^0.0.0-experimental-aae83a4b9",
+    "react-dom": "^0.0.0-experimental-aae83a4b9"
+  }
+}
